@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* global.css or tailwind.css */
+.product-card {
+  @apply bg-white border border-gray-200 p-4 rounded-xl shadow-md flex flex-col h-[300px];
+}
+
+@screen sm {
+  .product-card {
+    @apply w-[200px] p-3;
+  }
+}
+
+@screen md {
+  .product-card {
+    @apply w-[220px] p-4;
+  }
+}
+
+@screen lg {
+  .product-card {
+    @apply w-[240px];
+  }
+}
+
+@screen xl {
+  .product-card {
+    @apply w-[260px];
+  }
+}
+
+.product-card-title {
+  @apply text-base;
+}
+
+@screen sm {
+  .product-card-title {
+    @apply text-sm;
+  }
+}
+
+/* Invisible scrollbar but still scrollable */
+.hide-scrollbar {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
